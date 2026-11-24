@@ -1,0 +1,19 @@
+{
+  "name": "goonj-stories-skill",
+  "description": "Reviews a folder of Goonj field stories: reads each story, checks every quote against the text, covers the 19 Key Questions, scores readiness for outside use, lists consent checks, and writes questions for each writer. Produces an HTML report, an Excel workbook and per-story readings.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Goonj — Technology"
+  },
+  "keywords": [
+    "stories",
+    "field stories",
+    "story review",
+    "key questions",
+    "readiness",
+    "consent",
+    "mel",
+    "hindi",
+    "ngo"
+  ]
+}

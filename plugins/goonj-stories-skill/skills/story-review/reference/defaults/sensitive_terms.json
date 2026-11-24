@@ -1,0 +1,18 @@
+{
+  "_about": "How the skill protects people. 'sweep' finds sensitive vocabulary in a story's text; a story that contains it must carry a sensitivity flag or a note saying why not. 'specific' words are never allowed in findings or other summaries (they would point to one person's story). 'allowed_generic' is the one general phrase findings may use for the class of detail.",
+  "sweep": {
+    "menstrual": "menstru|sanitary|first period|got (my|her) period|during (my|her|their) periods?|माहवारी|मासिक धर्म|पीरियड|सैनिटरी|माय पैड|my pad",
+    "bereavement": "died|killed|death of|passed away|funeral|bereave|मृत्यु|मौत|देहांत|निधन|अंतिम संस्कार",
+    "widowhood": "widow|विधवा|पति की मृत्यु",
+    "health": "illness|disease|injur|wound|sores|fracture|broke his|broke her|broken arm|cancer|tuberculosis|\\bTB\\b|\\bHIV\\b|disabilit|handicap|बीमारी|चोट|घाव|कैंसर|टीबी|विकलांग|दिव्यांग",
+    "leprosy_or_begging": "leprosy|beggar|begging|कुष्ठ|भीख",
+    "violence": "rape|abuse|assault|domestic violence|suicide|miscarriage|बलात्कार|हिंसा|आत्महत्या|गर्भपात",
+    "minor": "minor girl|girl child|child marriage|बाल विवाह|नाबालिग"
+  },
+  "specific": "first period|sanitary|used cloth|menstrual cloth|blood on|father was killed|mother was killed|was killed|elephant attack|died|death of|passed away|widow|rape|abuse|suicide|miscarriage|\\bHIV\\b|leprosy|tuberculosis|cancer|broken arm|broke his arm|broke her arm|foot sores|sores on|disabled|मृत्यु|मौत|विधवा|कुष्ठ|माहवारी|पीरियड|सैनिटरी",
+  "allowed_generic": [
+    "personal health, injury, bereavement or menstrual detail",
+    "health, injury or family detail",
+    "sensitive personal detail"
+  ]
+}

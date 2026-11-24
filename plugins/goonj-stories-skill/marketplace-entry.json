@@ -1,0 +1,5 @@
+{
+  "name": "goonj-stories-skill",
+  "source": "./plugins/goonj-stories-skill",
+  "description": "Reviews a folder of field stories: checks every quote against the text, covers the 19 Key Questions, scores readiness for outside use, lists consent checks and writes questions for each writer. Gives an HTML report, an Excel workbook and per-story readings."
+}

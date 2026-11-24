@@ -1,0 +1,29 @@
+{
+  "_about": "Readiness measures how ready a write-up is for outside use, not how good the story or the work is. The 12 tests are computed by readiness.py from the checked records; only the wording here can be changed in the settings workbook. The band comes from the rule below unless an override row (story, band, reason) is supplied.",
+  "items": {
+    "1": "Location: village, block and district written (a state inferred from the district is accepted)",
+    "2": "Dates: start and end with a year, and working days stated",
+    "3": "Participants: a total and a women/men split",
+    "4": "Size: the work's size is given with a unit",
+    "5": "Named resident voice: a named resident, in direct speech, with age stated",
+    "6": "Decision moment shown: a person proposes or reasons are weighed",
+    "7": "Goonj's role: Goonj named, how it came in stated, and what the team did described",
+    "8": "Exchange: what families received (contents) and when",
+    "9": "Result: at least one result with a stated time gap, and none asserted without a date",
+    "10": "Voice integrity: no office-holder line standing in for residents, and more than reported speech",
+    "11": "Sensitivity: no personal health, injury, bereavement or menstrual detail or community label left without a consent status",
+    "12": "Consistency: one spelling per place, one size basis, no blank or varying code field, no year missing, no translation slip"
+  },
+  "bands": {
+    "5": "Publishable as it is after a copy-edit.",
+    "4": "Usable after light editing plus one field call.",
+    "3": "Usable with edits and a follow-up call: hard data present but voice, result or framing missing.",
+    "2": "Needs substantial re-reporting.",
+    "1": "Cannot be used outside in any form."
+  },
+  "rule": {
+    "band_2": "Two or more of items 5, 6, 7 and 9 fail and Goonj is not named anywhere in the story.",
+    "band_4": "Items 1, 5, 10 and 11 pass, a total number of people is stated, and at most three of items 2, 4, 6, 7, 8, 9 and 12 fail.",
+    "band_3": "Everything else."
+  }
+}

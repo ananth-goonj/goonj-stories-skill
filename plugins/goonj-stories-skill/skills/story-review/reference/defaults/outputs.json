@@ -1,0 +1,57 @@
+{
+  "_about": "Order, titles and lead lines of the report sections, and the list of sections a finding can be filed under. Builders read this file, so a section can be renamed or reordered here without touching code. A section that holds findings is left out when there are none (a Quick check has none).",
+  "claim_sections": ["outlook", "who", "why", "entry", "contrib", "change", "voice", "exchange", "format", "consent"],
+  "questions": [
+    {"id": "Q1", "tag": "Outlook", "title": "What the batch looks like", "ask": "What does the work in these stories look like overall: places, activities, time?"},
+    {"id": "Q2", "tag": "Repeat places", "title": "Repeat places", "ask": "Does the same place appear in more than one story?"},
+    {"id": "Q3", "tag": "Spread", "title": "How the idea spread", "ask": "Did one village's work lead another village to ask for the same?"},
+    {"id": "Q4", "tag": "Feelings and voice", "title": "Feelings and voice", "ask": "What did community members feel, and is it in their own words?"},
+    {"id": "Q5", "tag": "Reasons", "title": "Why people chose the work", "ask": "Why did people choose that work, and do the stories bring the reason out?"},
+    {"id": "Q6", "tag": "Documentation", "title": "What the stories leave out", "ask": "What do the stories leave out, and what should writers be asked to include?"}
+  ],
+  "gaps": [
+    {"id": "split", "title": "Women/men split of the people who worked", "prompt": "How many women and how many men took part in the work."},
+    {"id": "convener", "title": "Who convened the meeting", "prompt": "Who called the meeting, who first suggested the work, and what the Goonj team did."},
+    {"id": "result_gap", "title": "A result with a stated time gap", "prompt": "One result with a date and a number (people using it, time saved, produce)."},
+    {"id": "upkeep", "title": "An arrangement for looking after the work", "prompt": "Who will look after it, and how."},
+    {"id": "kit", "title": "What families received (kit or materials) and when", "prompt": "What families received and when (kit contents, hand-over date)."},
+    {"id": "dates", "title": "Work dates (start and end)", "prompt": "Start date, end date, days worked, and the season."},
+    {"id": "size", "title": "Size of the work with a unit", "prompt": "Length, breadth and unit (or area) of what was built, repaired or planted."},
+    {"id": "place", "title": "Village, block and district all written", "prompt": "Village, block, district and state; distance from the main road."},
+    {"id": "voice", "title": "A named resident's own words, with age", "prompt": "The problem in at least one named resident's own words, with age; keep the original-language text."},
+    {"id": "contrib", "title": "What people put in besides labour", "prompt": "What people put in besides labour (money, materials, tools, land, skills), with amounts."},
+    {"id": "consent", "title": "A consent status where a named person gives a personal detail", "prompt": "A consent line for every named person who gives a personal detail."},
+    {"id": "code", "title": "A report or activity code", "prompt": "Report code or activity code (one field, one format)."},
+    {"id": "original", "title": "Original-language text for the quotes", "prompt": "Keep the original-language text of every quote, next to the translation."},
+    {"id": "verifier", "title": "A verifier", "prompt": "A verifier line."},
+    {"id": "photo", "title": "A photo in the file shared", "prompt": "A photo."}
+  ],
+  "writing_rules": [
+    {"when": "outcome_asserted_unobserved", "text": "Describe a result in the past tense only when a date or a visit shows it was seen."},
+    {"when": "community_labels", "text": "Name a community only where a member of it speaks, and never from a surname."},
+    {"when": "always", "text": "Keep a quote to what was said; mark reported speech as reported."},
+    {"when": "women_only_count", "text": "If only women are counted, say whether any men took part."},
+    {"when": "two_size_figures", "text": "Write the size of the work in one form, with its unit."}
+  ],
+  "sections": [
+    {"id": "brief", "title": "In brief", "toc": "Start here", "kind": "brief", "lead": "Answers to the six questions this review was asked, in one place. Each points to the section with the evidence."},
+    {"id": "glance", "title": "The batch at a glance", "kind": "glance", "claims": "outlook", "lead": "Where the stories come from and what the work was."},
+    {"id": "stories", "title": "What each story is telling you", "kind": "stories", "lead": "A reading of each story from its text alone: what the problem was, what people did, what the story shows about how the work came about, and what it leaves out. Names tied to a health, injury, bereavement or menstrual detail are held back."},
+    {"id": "who", "title": "Who did the work", "toc": "The work", "kind": "claims", "claims": "who", "lead": "People who took part, as recorded. A women-only count is a minimum, not a total."},
+    {"id": "why", "title": "Why people chose the work", "kind": "claims", "claims": "why", "lead": "The reason given, whose words it is in, and whether other needs were weighed."},
+    {"id": "entry", "title": "How Goonj came in and who decided", "kind": "claims", "claims": "entry", "lead": "Who was at the meeting, who proposed the work, and whether the decision is shown or only stated."},
+    {"id": "contrib", "title": "What people put in and who looks after it", "kind": "claims", "claims": "contrib", "lead": "Contributions beyond labour, and what the stories say about looking after the work."},
+    {"id": "change", "title": "What changed, and how we know", "kind": "claims", "claims": "change", "lead": "Dates, results, evidence of change, and what went wrong."},
+    {"id": "voice", "title": "Feelings, voice and words", "kind": "claims", "claims": "voice", "lead": "Who is quoted, how people felt, and whose words frame the work."},
+    {"id": "exchange", "title": "Kit and Goonj's role", "kind": "claims", "claims": "exchange", "lead": "What the stories say about the exchange that defines the programme."},
+    {"id": "kq", "title": "The 19 Key Questions", "toc": "The format", "kind": "key_questions", "lead": "Whether each story answers the questions the programme wants stories to answer. Clear means answered with specifics, partial means in general words, not stated means nothing answers it."},
+    {"id": "left-out", "title": "What the stories leave out", "kind": "gaps", "lead": "Gaps counted across the batch. Each is a gap in the write-up, not necessarily in the village."},
+    {"id": "format", "title": "Records, template and translation", "kind": "claims", "claims": "format", "lead": "What the stories carry as records, and what the template and the translation step do to them."},
+    {"id": "ready", "title": "Readiness for outside use", "kind": "readiness", "lead": "A 12-test checklist computed from the records, and a 1 to 5 band for each story."},
+    {"id": "consent", "title": "Sensitivity and consent", "kind": "consent", "claims": "consent", "lead": "Named people, personal details and community labels."},
+    {"id": "next", "title": "For the next stories", "toc": "Next steps", "kind": "next", "lead": "What to ask field writers to include, drawn from the gaps above."},
+    {"id": "qs", "title": "Questions for the writers", "kind": "questions", "lead": "Plain, neutral and specific; no question assumes anything went wrong."},
+    {"id": "checked", "title": "How this was checked", "toc": "Method", "kind": "checked", "lead": "What was done to make the numbers and findings reliable, and where they stop."}
+  ],
+  "workbook_sheets": ["Read me", "Summary", "Method & checks", "Stories", "Key Questions", "Activities", "Quotes", "Feelings", "Findings", "Corrections log", "Writer questions", "Codebook"]
+}

@@ -1,0 +1,19 @@
+# Never commit stories, generated reviews or settings that name real people or places.
+Story Review */
+_working/
+RUN_LOG.md
+* - Analysis Report.html
+* - Method and Data.xlsx
+* - Story-by-Story Readings.md
+story-review-settings.xlsx
+
+# Story files and spreadsheets stay out of the plugin; the example is made by a script.
+*.docx
+*.xlsx
+*.doc
+*.pdf
+*.rtf
+
+__pycache__/
+*.pyc
+.DS_Store

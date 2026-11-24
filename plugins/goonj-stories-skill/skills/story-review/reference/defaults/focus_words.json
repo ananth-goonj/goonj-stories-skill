@@ -1,0 +1,22 @@
+{
+  "_about": "Words and phrases searched in every story, counted inside and outside quotation marks. Each entry is a label and a regular expression written for both English and Hindi. Do not use \\b around Devanagari. The MEL team can add entries in the settings workbook.",
+  "terms": {
+    "dignity / respect": "dignit|self-respect|सम्मान|इज्ज़त|इज्जत|गरिमा",
+    "reward / gift": "\\brewar|\\bgift|उपहार|इनाम|प्रोत्साहन",
+    "charity": "charit|दान|खैरात",
+    "empower / self-reliance": "empower|self-reli|सशक्त|आत्मनिर्भर",
+    "collective": "collective|सामूहिक|एकजुट",
+    "community-led / community action": "community-led|community action|community initiative|community effort|समुदाय के नेतृत्व",
+    "together": "together|मिलकर|साथ मिल",
+    "ownership / upkeep": "ownership|responsibility|maintain|देखरेख|रखरखाव|जिम्मेदारी|जिम्मेवारी",
+    "government / administration": "government|administration|administrative|panchayat|सरकार|प्रशासन|पंचायत|प्रखंड कार्यालय|ब्लॉक कार्यालय",
+    "waiting": "\\bwait|इंतज़ार|इंतजार|प्रतीक्षा",
+    "hope": "\\bhope|उम्मीद|आशा",
+    "monsoon / heavy rain": "monsoon|rainy season|rainfall|heavy rain|flood|बरसात|बारिश|मानसून|बाढ़",
+    "thanks / gratitude": "thank|grateful|gratitude|धन्यवाद|आभार|शुक्रिया",
+    "kit / CFW": "\\bkit\\b|\\bCFW\\b|materials and support|किट|सीएफडब्ल्यू|क्लॉथ फॉर वर्क",
+    "Goonj": "Goonj|गूंज|गूँज",
+    "ambulance / hospital": "ambulance|hospital|health centre|health center|एम्बुलेंस|एंबुलेंस|अस्पताल|स्वास्थ्य केंद्र",
+    "future plans": "future season|next season|continue this|continue working|take up other|आगे भी|भविष्य में"
+  }
+}
