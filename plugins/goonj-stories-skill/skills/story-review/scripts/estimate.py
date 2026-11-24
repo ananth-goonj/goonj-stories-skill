@@ -3,7 +3,9 @@
 
 Numbers come from what has been measured so far: one extractor on one story used about 220k tokens and one second
 reader about 215k (a 900-word story, the current codebook); one analyst writing 19 findings for eight stories used about 440k; on eight findings a harmoniser used about
-340k, the three skeptics 210k to 310k each, and the editor about 340k. They are a guide, not a promise: long stories, many findings or retries cost more. Always shown to the user
+340k, the three skeptics 210k to 310k each, and the editor about 340k. Measured waiting time: an extractor about 13
+minutes, a second reader 10, the harmoniser 17, an analyst 26, a skeptic 12 to 19, the editor 16 (agents in one
+stage run side by side, at most eight at a time). They are a guide, not a promise: long stories, many findings or retries cost more. Always shown to the user
 before a large run.
 
 Usage: python3 estimate.py --stories N [--depth full|quick]
@@ -23,7 +25,7 @@ def plan(n, depth):
     extractors = int(math.ceil(n / float(per_agent)))
     ext_tokens = extractors * (150000 + 55000 * per_agent) if per_agent > 1 else extractors * 220000
     rows = [('Extractors (one record per story)', extractors, ext_tokens)]
-    minutes = int(math.ceil(extractors / 8.0)) * 6
+    minutes = int(math.ceil(extractors / 8.0)) * 13
     if depth == 'full':
         verifiers = int(math.ceil(n / 2.0))
         rows += [('Second readers (two stories each)', verifiers, verifiers * 300000),
@@ -31,7 +33,7 @@ def plan(n, depth):
                  ('Analysts (two lens sets)', 2, 2 * (350000 + 5000 * n)),
                  ('Skeptics (evidence, confounds, fairness)', 3, 3 * (230000 + 4000 * n)),
                  ('Editor (final wording)', 1, 340000)]
-        minutes += int(math.ceil(verifiers / 8.0)) * 8 + 10 + 15 + 15 + 10
+        minutes += int(math.ceil(verifiers / 8.0)) * 10 + 17 + 26 + 19 + 16
     total = sum(r[2] for r in rows)
     return per_agent, rows, total, minutes
 
